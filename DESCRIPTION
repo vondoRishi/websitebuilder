@@ -1,7 +1,7 @@
 Package: websitebuilder
 Type: Package
 Title: Create static website from html files
-Version: 0.1.0
+Version: 0.1.1
 Author: Rishi Das Roy
 Maintainer: Rishi Das Roy <rishi.dasroy@gmail.com>
 Description: Create static website from html files.
