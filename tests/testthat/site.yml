@@ -3,18 +3,18 @@ output_dir: "_site"
 navbar:
   title: "My Website"
   left:
-    - text: "Home"
+    - text: "Notebook"
       icon: fa-home
-      href: Home.nb.html
-    - text: "About"
+      href: rMarkdown_notebook.nb.html
+    - text: "rmd_Document"
       icon: fa-info
-      href: About.nb.html
+      href: rMarkdown_doc.html
     - text: "More"
       icon: fa-gear
       menu:
         - text: "Heading 1"
-        - text: "Page A"
-          href: page_a.html
+        - text: "Simple html page"
+          href: R_HTML_document.html
         - text: "Page B"
           href: page_b.html
         - text: "---------"

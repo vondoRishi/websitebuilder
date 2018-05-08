@@ -1,12 +1,11 @@
 Package: websitebuilder
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Create static website from html files
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Rishi Das Roy
+Maintainer: Rishi Das Roy <rishi.dasroy@gmail.com>
+Description: Create static website from html files.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports: yaml

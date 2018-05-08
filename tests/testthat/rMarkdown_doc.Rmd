@@ -1,0 +1,12 @@
+---
+title: "R markdown html"
+output: html_document
+---
+
+## R Markdown
+
+This is an R Markdown document (html).
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```

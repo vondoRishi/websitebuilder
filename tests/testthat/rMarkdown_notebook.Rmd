@@ -1,0 +1,11 @@
+---
+title: "Notebook example"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. 
+
+```{r echo=FALSE}
+plot(cars)
+```
+

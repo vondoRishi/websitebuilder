@@ -1,8 +1,34 @@
 mySite_generator <- function(site_config){
 
   return(paste(
+    '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script> 
+  function loadbootStrap(){
+    var script = document.createElement("script");
+    script.src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js";
+    document.body.appendChild(script);
+  }
+  if( typeof jQuery === "undefined" ) {
+    alert("jquery");
+    var script = document.createElement("script");
+    script.src = "https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js";
+    script.onload = function () {
+      loadbootStrap();
+    };
+    document.body.appendChild(script);
+  }
+</script>
+
+<script> 
+  if( typeof $.fn.dropdown === "undefined" ) {
+    alert("bootstrap");
+    loadbootStrap();
+  }
+</script>
+    ',
     '<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>',
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+    ',
     '<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
     <div class="container">',
     getNavHeader(site_config$navbar), # navbar-header
