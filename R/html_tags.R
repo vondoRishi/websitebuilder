@@ -9,7 +9,6 @@ mySite_generator <- function(site_config){
     document.body.appendChild(script);
   }
   if( typeof jQuery === "undefined" ) {
-    alert("jquery");
     var script = document.createElement("script");
     script.src = "https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js";
     script.onload = function () {
@@ -21,7 +20,6 @@ mySite_generator <- function(site_config){
 
 <script> 
   if( typeof $.fn.dropdown === "undefined" ) {
-    alert("bootstrap");
     loadbootStrap();
   }
 </script>

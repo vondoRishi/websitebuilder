@@ -43,8 +43,7 @@ buildHtml<-function(side){ ## Insert navbar and footer
 
 copyToSiteDir<-function(fileName,htmlText){
   body_ind <- grep("<body>",htmlText)
-  pandoc_ind <- grep("pandoc",htmlText) ## is it a pandoc genereted html which may include bootstrap library already
-  print(paste(fileName,pandoc_ind,length(pandoc_ind)>0))
+  # pandoc_ind <- grep("pandoc",htmlText) ## is it a pandoc genereted html which may include bootstrap library already
   finalFile<- c(htmlText[0:body_ind],navHtml,htmlText[(body_ind+1):length(htmlText)])
   writeLines(finalFile,con=file.path(config$output_dir,fileName))
 }
